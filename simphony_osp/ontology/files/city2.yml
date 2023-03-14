@@ -1,0 +1,5 @@
+identifier: city2
+ontology_file: city2.ttl
+format: 'turtle'
+namespaces:
+    city2: https://www.simphony-osp.eu/city#

@@ -19,7 +19,7 @@ SimPhoNy enables:
 
 SimPhoNy is available on PyPI, so it can be installed using pip
 
-`pip install simphony-osp`
+`pip install simphony_osp`
 
 Detailed installation instructions can be found
 [here](https://simphony.readthedocs.io/en/v4.0.0/introduction/installation.html).

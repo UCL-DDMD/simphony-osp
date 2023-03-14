@@ -158,15 +158,16 @@
                         rdfs:subClassOf :GeographicalPlace ;
                         rdfs:label "Architectural Structure"@en .
 
-
 ###  https://www.simphony-osp.eu/city#Atom
-:Atom rdf:type owl:Class ;
-      rdfs:subClassOf :Building .
+:Atom                   rdf:type owl:Class ;
+                        rdfs:subClassOf :GeographicalPlace ;
+                        rdfs:label "Atom"@en .
+
 
 
 ###  https://www.simphony-osp.eu/city#Building
 :Building rdf:type owl:Class ;
-          rdfs:subClassOf :ArchitecturalStructure ,
+          rdfs:subClassOf :Atom ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :hasPart ;
                             owl:someValuesFrom :Floor

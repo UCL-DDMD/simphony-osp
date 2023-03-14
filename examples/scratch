@@ -1,0 +1,37 @@
+
+CUDS.MASS:....
+ - range: CUBA.REAL 
+   
+CUDS.ATOM:
+ - description: A general atom, one of the atoms in the PT. 
+ - superclass: CUDS.THING
+ - Properties: 
+   - CUDS.mass: 
+   - CUDS.charge:
+
+CUDS.OXYGEN_ATOM:
+ description: an atom which is oxygen 
+ parents: [CUBA.ATOM] 
+ CUBA.HAS:
+  CUBA.SYMBOL:
+   RANGE: "O" 
+  
+--> O=CUDS.OxygenAtom()
+print(O.symbol, O.uuid) 
+ O, p98411y4p98y32roeghfp2e938yr 
+
+
+
+   what is an ion: is it an Atoms with a charge? or is an Atom an ion with a charge? 
+   or... are they unrelated classes. ?
+
+   so we always start from the prespective! 
+
+   from a non reactive simulation perspective, we need separate classes! but if we are describing a reaction, where Atoms may become ions on a whim, then this may not be the case. 
+
+
+
+ CUDS.PARTICLE: 
+
+ if a particle has proton and electron then its an atom, etc.. 
+
